@@ -26,6 +26,7 @@ db.connect();
 
 require("./routes/auth.routes")(app)
 require("./routes/user.routes")(app)
+require("./routes/book.routes")(app)
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
 });
